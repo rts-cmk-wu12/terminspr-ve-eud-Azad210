@@ -2,6 +2,7 @@ import '../sass/aktiviteter.scss';
 
 
 
+
 function Aktiviteter() {
  
 
@@ -10,6 +11,7 @@ function Aktiviteter() {
     <section>
   <h2>Aktiviteter</h2>
     </section>  
+    
     </>
   )
 }

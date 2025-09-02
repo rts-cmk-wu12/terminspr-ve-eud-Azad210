@@ -1,27 +1,39 @@
-
-
-
-
-
-
-
-
-
-/*iconer:
-
-home: 
+import '../sass/nav-bar.scss';
 import { CiHome } from "react-icons/ci";
-<CiHome />
-
-search:
 import { CiSearch } from "react-icons/ci";
-<CiSearch />
-
-calandar:
 import { CiCalendar } from "react-icons/ci";
-<CiCalendar />
 
 
 
 
-*/
+function Navbar() {
+ 
+
+  return (
+    <>
+    <nav className="">
+			<Link to="/aktiviteter">
+				<CiHome />
+			</Link>
+
+            <Link to="/søgeside">
+				<CiSearch />
+			</Link>
+			
+			<Link to="/">
+				<CiCalendar />
+
+			</Link>
+		</nav>
+    </>
+  )
+}
+
+export default Navbar
+
+
+
+
+
+
+
