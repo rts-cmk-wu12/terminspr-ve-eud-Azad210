@@ -1,5 +1,5 @@
 import '../sass/aktiviteter.scss';
-
+import Navbar from '../components/nav-bar';
 
 
 
@@ -11,7 +11,7 @@ function Aktiviteter() {
     <section>
   <h2>Aktiviteter</h2>
     </section>  
-    
+    <Navbar />
     </>
   )
 }

@@ -15,12 +15,16 @@ function Home() {
     
     
     <div className='text-and-btn'>
-    <h1>Landrup <span>Dans</span></h1>
-    <Link to="/aktiviteter" className="btn">
+    <h1>Landrup</h1>
+    <span className='headline-under-h1'>DANS</span>
+    <span className='line-under-headline'></span>
+    <div className='test-knappen'>
+     <Link to="/aktiviteter" className="btn">
       Kom i gang
     </Link>
+</div>
+
       </div>
-     
 
     </section>
     

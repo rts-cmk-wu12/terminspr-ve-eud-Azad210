@@ -1,4 +1,6 @@
 import '../sass/kalender-hold-oversigt.scss';
+import Navbar from '../components/nav-bar';
+
 
 
 
@@ -10,6 +12,7 @@ function KalenderHold() {
     <section>
   <h2>Junior Fitness Dan...</h2>
     </section>  
+     <Navbar />
     </>
   )
 }

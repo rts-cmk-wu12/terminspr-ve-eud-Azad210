@@ -1,0 +1,25 @@
+@import 'variables';
+
+
+.navbar {
+    width: 100%;
+  background-color: $navbar-color;
+  display: flex;
+  justify-content: space-around;
+  padding: 16px;
+  position: fixed;
+  bottom: 0;
+  font-size: $font-size-medium ;
+
+
+
+  .icon-wrapper{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $black-color;
+  }
+
+}

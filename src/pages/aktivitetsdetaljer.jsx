@@ -1,4 +1,6 @@
 import '../sass/aktivitetsdetaljer.scss';
+import Navbar from '../components/nav-bar';
+
 
 
 
@@ -10,6 +12,8 @@ function Aktivitetsdetaljer() {
     <section>
   
     </section>  
+
+    <Navbar />
     </>
   )
 }

@@ -1,0 +1,43 @@
+@import 'variables';
+
+.search {
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+
+ 
+  &__label {
+    position: relative;
+    display: inline-block;
+    
+   
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: $gray-color;
+    font-size: $font-size-medium;
+  }
+
+  &__input {
+    border: none;
+    padding: 5px;
+    width: 356px;
+    font-size: 1rem;
+    background-color: $searchbar-color;
+    height: 54px;
+    opacity: 0.3;
+
+
+    &:focus {
+      transition: border 0.15s ease-in-out;
+      outline: none;
+    }
+
+  }
+}
