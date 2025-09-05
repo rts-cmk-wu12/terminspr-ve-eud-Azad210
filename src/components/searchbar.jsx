@@ -10,7 +10,7 @@ export const SearchBar = () => {
     return (
         <>
             <div className="search">
-                <label className="search__label" htmlFor="search-input">
+                <label className="search__label">
                     <CiSearch class="search__icon"/>
                     <input
                         type="text"

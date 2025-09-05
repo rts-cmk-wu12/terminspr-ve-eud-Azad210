@@ -1,6 +1,8 @@
 import '../sass/aktiviteter.scss';
 import Navbar from '../components/nav-bar';
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+
 
 function Aktiviteter() {
   const [aktiviteter, setAktiviteter] = useState([]);
@@ -13,11 +15,12 @@ function Aktiviteter() {
     };
     hentAktiviteter();
   }, []);
+  
 
   return (
     <>
+    <h2>Aktiviteter</h2>
       <section className='aktiviteter'>
-        <h2>Aktiviteter</h2>
         <div className='aktiviteter__detatils'>
           {aktiviteter.map((aktivitet) => (
             <div className="aktiviteter__card">
