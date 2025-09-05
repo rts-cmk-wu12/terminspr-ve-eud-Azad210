@@ -23,6 +23,26 @@ Et ikon-bibliotek, som er beregnet på React.
 En udvidelse til CSS, som lader mig lave funktioner, variabler, mixins og nesting. Jeg kan opdele min CSS i moduler og dermed genbruge kode flere steder.
 
 
+* **Styling**:                                    
+
+* **Fonts:**
+'Ubuntu', sans-serif;
+'Roboto', sans-serif;
+'Racing Sans One', sans-serif;
+
+* **Skriftstørrelser:**
+ 18px;
+24px;
+36px;
+
+* **Farver:**
+#EAEAEA;
+#5E2E53;
+ #E1A1E9;
+#000000;
+ #E9E9E9;
+#C4C4C4;
+
 ## Kode-eksempel
 ```jsx
 function Aktiviteter() {
