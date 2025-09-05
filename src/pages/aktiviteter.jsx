@@ -3,7 +3,6 @@ import Navbar from '../components/nav-bar';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-
 function Aktiviteter() {
   const [aktiviteter, setAktiviteter] = useState([]);
 
@@ -15,20 +14,21 @@ function Aktiviteter() {
     };
     hentAktiviteter();
   }, []);
-  
 
   return (
     <>
-    <h2>Aktiviteter</h2>
+      <h2>Aktiviteter</h2>
       <section className='aktiviteter'>
         <div className='aktiviteter__detatils'>
           {aktiviteter.map((aktivitet) => (
             <div className="aktiviteter__card">
-              <img
-                className="aktiviteter__billede"
-                src={aktivitet.asset.url}
-                alt={aktivitet.name}
-              />
+              <Link to={`/aktivitetsdetaljer`}>
+                <img
+                  className="aktiviteter__billede"
+                  src={aktivitet.asset.url}
+                  alt={aktivitet.name}
+                />
+              </Link>
               <div className='aktiviteter__info'>
                 <h3>{aktivitet.name}</h3>
                 <p>{aktivitet.minAge} - {aktivitet.maxAge} år</p>
@@ -39,7 +39,7 @@ function Aktiviteter() {
       </section>  
       <Navbar />
     </>
-  )
+  );
 }
 
 export default Aktiviteter;

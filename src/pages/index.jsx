@@ -16,7 +16,6 @@ function Home() {
     
     <div className='text-and-btn'>
     <h1>LANDRUP</h1>
-    <h2>a</h2>
     <span className='headline-under-h1'>DANS</span>
     <span className='line-under-headline'></span>
     <div className='test-knappen'>

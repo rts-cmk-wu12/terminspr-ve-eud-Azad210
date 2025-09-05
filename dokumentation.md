@@ -24,7 +24,6 @@ En udvidelse til CSS, som lader mig lave funktioner, variabler, mixins og nestin
 
 
 ## Kode-eksempel
-
 ```jsx
 function Aktiviteter() {
   const [aktiviteter, setAktiviteter] = useState([]);
@@ -37,20 +36,21 @@ function Aktiviteter() {
     };
     hentAktiviteter();
   }, []);
-  
 
   return (
     <>
-    <h2>Aktiviteter</h2>
+      <h2>Aktiviteter</h2>
       <section className='aktiviteter'>
         <div className='aktiviteter__detatils'>
           {aktiviteter.map((aktivitet) => (
             <div className="aktiviteter__card">
-              <img
-                className="aktiviteter__billede"
-                src={aktivitet.asset.url}
-                alt={aktivitet.name}
-              />
+              <Link to={`/aktivitetsdetaljer`}>
+                <img
+                  className="aktiviteter__billede"
+                  src={aktivitet.asset.url}
+                  alt={aktivitet.name}
+                />
+              </Link>
               <div className='aktiviteter__info'>
                 <h3>{aktivitet.name}</h3>
                 <p>{aktivitet.minAge} - {aktivitet.maxAge} år</p>
@@ -61,14 +61,11 @@ function Aktiviteter() {
       </section>  
       <Navbar />
     </>
-  )
+  );
 }
 ```
 
+I komponenten Aktiviteter oprettes et tomt state ved hjælp af useState, som skal indeholde de aktiviteter, der bliver hentet. UseEffect bliver der lavet et kald til api’et, som henter data om aktiviteter. 
+til sidst bliver det lagt ind i et state med setAktiviteter
 
-
-Komponenten Aktiviteter henter data fra et API, gemmer det i state og viser en liste over aktiviteter, hver aktivitet vises som et kort med billede, navn og aldersgruppe.
-
-Komponenten Aktiviteter henter en liste over aktiviteter fra api'et og gemmer dem i komponentens state ved hjælp af Reacts useState-hook. Datahentningen sker asynkront inden for en useEffect-hook.
-
-Hver aktivitet vises som et kort, der indeholder et billede, navnet på aktiviteten og aldersgruppen. .map()-funktionen bruges til at generere et kort for hver aktivitet i state-arrayet. 
+Efterfølgende bliver statet gennemgået med map, så der bliver oprettet en boks for hver aktivitet. Hver boks viser et billede, navn og aldersgruppen.
